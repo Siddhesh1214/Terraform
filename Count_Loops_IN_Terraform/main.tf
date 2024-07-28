@@ -6,10 +6,10 @@
 
 #----------------- Method - 1 ----------------------
 
-provider "aws" {
-  access_key = ""
-  secret_key = ""
-}
+# provider "aws" {
+#   access_key = ""
+#   secret_key = ""
+# }
 
 resource "aws_iam_user" "this_users" {
     name = "linux.${count.index}"
@@ -17,10 +17,10 @@ resource "aws_iam_user" "this_users" {
 }
 
 #-------------------- Method - 2 -------------------------
-provider "aws" {
-  access_key = ""
-  secret_key = ""
-}
+# provider "aws" {
+#   access_key = ""
+#   secret_key = ""
+# }
 
 resource "aws_iam_user" "this_users" {
     name = var.aws_user_name[count.index]

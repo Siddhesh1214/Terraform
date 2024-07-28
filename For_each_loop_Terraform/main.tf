@@ -5,10 +5,10 @@
 
 
 #-------------------- For_each_loop ---------------------#
-provider "aws" {
-  access_key = ""
-  secret_key = ""
-}
+# provider "aws" {
+#   access_key = ""
+#   secret_key = ""
+# }
 
 resource "aws_instance" "this_instance" {
     for_each = toset(var.aws_ami)

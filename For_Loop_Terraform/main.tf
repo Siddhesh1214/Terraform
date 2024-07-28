@@ -6,8 +6,8 @@
 
 #-------------------- For_each_loop ---------------------#
 provider "aws" {
-  access_key = "AKIAW7P4C3NNQMRYLQMY"
-  secret_key = "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"
+  access_key = ""
+  secret_key = ""
 }
 
 resource "aws_instance" "this_instance" {
